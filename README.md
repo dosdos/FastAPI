@@ -24,8 +24,8 @@ $ uvicorn main:app --reload
 
 ```
 $ heroku login
-$ heroku git:remote -a fast-api
-$ git push heroku master
+$ heroku git:remote -a fastapy
+$ git push heroku main
 $ heroku open
 ```
 
