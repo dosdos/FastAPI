@@ -49,3 +49,8 @@ Feel free to:
 
 * Repo owner or admin: dosdos
 * Contact: dav.santucci@gmail.com
+
+### Further Readings ###
+
+* [Official FastAPI Docs](https://fastapi.tiangolo.com/)
+* [Getting Started on Heroku with Python](https://devcenter.heroku.com/articles/getting-started-with-python)
