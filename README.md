@@ -1,29 +1,51 @@
-# README #
+# FastAPI endpoints
 
-This README would normally document whatever steps are necessary to get your application up and running.
+A set Python FastAPI endpoint hosted on Heroku.
 
-### What is this repository for? ###
+You can try it online on: [fastapy.herokuapp.com](https://fastapy.herokuapp.com/docs)
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Run the project locally ###
 
-### How do I get set up? ###
+Clone the project and setup the virtualenv:
+```
+$ git clone git@bitbucket.org:Dosdos/fast-api.git
+$ mkvirtualenv -p python3 fast-api
+$ workon fast-api
+$ cd fast-api
+$ pip3 install -r requirements.txt
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Then, run via uvicorn:
+```
+$ uvicorn main:app --reload
+```
+
+### Deploy the project on Heroku ###
+
+```
+$ heroku login
+$ heroku git:remote -a fast-api
+$ git push heroku master
+$ heroku open
+```
+
+### Run tests ###
+
+To run unit tests simply type:
+
+```
+$ pytest
+```
 
 ### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+Feel free to:
+
+* Writing more tests
+* Doing code review
+* Add comments
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Repo owner or admin: dosdos
+* Contact: dav.santucci@gmail.com
